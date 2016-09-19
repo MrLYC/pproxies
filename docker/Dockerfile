@@ -1,6 +1,6 @@
 FROM tutum/centos:centos7
 WORKDIR /opt/
-RUN yum install -q go git
+RUN yum -y install go git
 RUN env GOPATH=/opt/ go get github.com/xlaurent/pproxies/pproxies
 
 ENV PORT 9527
